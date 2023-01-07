@@ -1,0 +1,87 @@
+*{
+   margin:  0%;
+   padding: 0%;
+   font-family: 'trirong', serif;
+}
+
+.prin{
+    background-image: url("../Img/Fondo\ Nosotros.png");
+    font-weight: 400px;
+    text-align: center;
+    padding: 30px ;
+    font-size: 40px; 
+    margin-bottom: 50px;
+}
+
+.mvw-contianer{
+   max-width: 90%;
+   margin-left: 50px; 
+}
+
+.mvw-contianer .mvw-block{
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.mvw-contianer .mvw-block .image{
+    flex: 0 0 auto;
+    width: 400px;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, .3);
+    line-height: 0;
+
+}
+
+.mvw-contianer .mvw-block .image img{
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, .3);
+    transition: .3s;
+}
+
+.mvw-contianer .mvw-block .image:hover img{
+    transform: scale(1.05);
+}
+
+.mvw-contianer .mvw-block .content{
+    flex: 0 0 auto;
+    width: calc(100% - 400px);
+    box-sizing: border-box;
+    align-self: center;
+}
+
+.mvw-contianer .mvw-block .content h5{
+    font-weight: 550;
+    font-size: 2.5em;
+    color: #403104;
+    margin-bottom: 35px;
+    text-align: center;
+}
+
+.mvw-contianer .mvw-block .content p{
+    font-size: 18px;
+    text-align: center;
+}
+
+
+@media screen and (min-width: 1024px)
+{
+    .mvw-contianer .mvw-block:nth-child(odd) .image{
+        order: 1;
+    }
+    .mvw-contianer .mvw-block:nth-child(even) .image{
+        order: 2;
+    }
+    .mvw-contianer .mvw-block:nth-child(odd) .content{
+        order: 2;
+        padding-left: 30px;
+    }
+    .mvw-contianer .mvw-block:nth-child(even) .content{
+        order: 1;
+        padding-right: 30px;
+    }
+}
+

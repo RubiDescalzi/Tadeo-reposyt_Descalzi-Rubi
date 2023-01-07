@@ -1,0 +1,43 @@
+*{
+    padding: 0%;
+    margin: 0%;
+
+}
+
+.cont{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.prim{
+    width: 50%;
+    display: flex;
+    display: block;
+    text-align: center; 
+    padding: 50px;  
+}
+
+.prim a img{
+    width: 80%;
+    height: auto;
+    border:5px solid #7f72c8;
+    margin-top: 1cm;
+
+}
+
+.seg{
+    width: 50%;
+    display: flex;
+    display: block;
+    text-align: center;
+    padding: 50px;  
+}
+
+.seg a img{
+    width: 80%;
+    height: auto;
+    border:5px solid #76792c;
+    margin-top: 1cm;
+}

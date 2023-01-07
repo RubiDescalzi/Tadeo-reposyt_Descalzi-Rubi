@@ -1,0 +1,68 @@
+
+.Titulo_Depi{
+    margin-top: -10%;
+    text-align: center;
+    margin-bottom:50px ;
+}
+
+.Imagen_Bra{
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+.Imagen_Bra .datos{
+    margin-left: 13%;
+    font-size: 30px;
+    margin-top: 10%;
+
+}
+
+.Imagen_Bra img{
+    margin-left: 20%;
+}
+
+.Imagen_Bra .datos button{
+    font-size: 20px;
+    background-color: #76792c;
+    color: #fff;
+}
+
+.datos button:hover{
+    background: black;
+    padding: 5px 15px;
+}
+
+ /* Imagen bINIKI */
+
+.Imagen_Bikini{
+    width: 100%;
+    height: auto;
+    display: flex;
+    margin-top: 100px;
+}
+
+.Imagen_Bikini .datos{
+    margin-left: 26%;
+    font-size: 30px;
+    margin-top: 10%;
+
+}
+
+.Imagen_Bikini img{
+    margin-left: 17%;
+}
+
+.Imagen_Bikini .datos button{
+    font-size: 20px;
+    background-color: #76792c;
+    color: #fff;
+}
+
+.datos button:hover{
+    background: black;
+    padding: 5px 15px;
+}
+
+
+

@@ -1,0 +1,175 @@
+
+<style>
+*{
+    margin:0 ;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.nav{
+    position: fixed;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    transition: all 0.5s ease;  
+    background-color: #5f55a8;
+}
+
+.nav.active{
+    background-color: #76792c !important;
+
+}
+
+
+.nav .logo_men img{
+    width: 120px;
+    height: 60px;
+}
+
+.menu{
+   display: flex;
+}
+
+.menu li{
+    list-style: none;
+    margin: 20px;
+    position: relative;
+}
+.menu li a{
+    color: rgb(241, 241, 241);
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.5s ease;  
+}
+
+.menu li a:hover{
+    padding: 5px 10px;
+    background:#fff ;
+    color: #000;
+    border-radius: 15px;
+}
+
+
+
+
+/* sub_menu */
+
+.sub_menu{
+    background-color: #2f2c79;
+    position: absolute;
+    width: 180px;
+    display: none;
+}
+
+
+.sub_menu li a{
+    display: block;
+    padding: 15px;;
+    color:white;
+    font-family:'open sans';
+    background-color: #76792c;
+}
+
+.menu li:hover .sub_menu{
+    display: block; 
+}
+
+.sub_menu li a:hover{
+    padding: 5px 10px;
+    background: #5f55a8;
+    color: #000;
+    
+}
+
+.sub_menu.active1{
+    background-color: black ;
+
+}
+
+.sub_menu.active1 li a{
+    background: #76792c;
+    
+}
+
+
+.menu_btn{
+    color: #000;
+    font-size: 20px;
+    display: none;
+    cursor: pointer;
+
+}
+
+@media screen and (max-width:800px){
+
+    .sub_menu{
+        display: none  !important;
+    }
+
+    .menu_btn{
+        display: block;
+    }
+    .menu{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 300px;
+        height: 100vh;
+        background: #76792c;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.5s ease-in-out;
+        transform: translate(-100%);
+
+    }
+    .menu li{
+        margin: 15px 0;
+    }
+    .menu li a{
+        color: #000;
+    }
+    .menu.active{
+        transform: translate(0);
+    }
+}
+
+</style>
+<header class="nav">
+        <div class="logo_men">  
+            <img src="../Img/Logo_Tadeo.png">
+        </div>
+        <ul class="menu">
+            <li><a href="../index.html" close >Inicio </a></li>
+            <li><a href="../nosotros.html">Nosotros</a></li>
+            <li><a href="../servicios.html">Servicios</a>
+                <ul class="sub_menu">
+                    <li><a href="../Outsourcing Contable.html">Outsourcing Contable</a></li>
+                    <li><a href="../Outsourcing de Planillas.html">Outsourcing de Planillas</a></li>
+                    <li><a href="../Asesoría Financiera.html">Asesoría Financiera </a></li>
+                    <li><a href="../otros.html">Otros</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="../clientes.html">Nuestros Clientes </a>
+            </li>
+            <li><a href="../propuesta empresarial.html">Propuesta Empresarial</a>
+            </li>
+            <li><a href="../contactanos.html">Contactanos</a></li>
+        </ul>
+        <div class="menu_btn">
+            <i class="fas fa-bars"></i>
+        </div>
+
+</header>
+
+
+
+
+
+

@@ -1,0 +1,65 @@
+
+.Titulo_Otros{
+    margin-top: -10%;
+    text-align: center;
+    margin-bottom:50px ;
+}
+
+.Imagen_Cejas{
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+.Imagen_Cejas .datos{
+    margin-left: 13%;
+    font-size: 30px;
+    margin-top: 10%;
+
+}
+
+.Imagen_Cejas img{
+    margin-left: 20%;
+}
+
+.Imagen_Cejas .datos button{
+    font-size: 20px;
+    background-color: #76792c;
+    color: #fff;
+}
+
+.datos button:hover{
+    background: black;
+    padding: 5px 15px;
+}
+
+ /*  */
+
+.Imagen_Pack{
+    width: 100%;
+    height: auto;
+    display: flex;
+    margin-top: 100px;
+}
+
+.Imagen_Pack .datos{
+    margin-left: 26%;
+    font-size: 30px;
+    margin-top: 10%;
+
+}
+
+.Imagen_Pack img{
+    margin-left: 17%;
+}
+
+.Imagen_Pack .datos button{
+    font-size: 20px;
+    background-color: #76792c;
+    color: #fff;
+}
+
+.datos button:hover{
+    background: black;
+    padding: 5px 15px;
+}

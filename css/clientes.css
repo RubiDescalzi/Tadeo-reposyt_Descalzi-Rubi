@@ -1,0 +1,110 @@
+*{
+	box-sizing:border-box;
+}
+.contenedor{
+	width:100%;
+	margin: 0;
+   
+}
+
+[class*="col-"]{
+	width:100%;
+	float: left;
+}
+
+[class*="col-"]{
+	float:left;
+	padding:10px;
+}
+	.col-1{width:8.33%;}
+	.col-2{width:16.66%;}
+	.col-3{width:25%;}
+	.col-4{width:33.33%;}
+	.col-5{width:41.66%;}
+	.col-6{width:50%;}
+	.col-7{width:58.33%;}
+	.col-8{width:66.66%;}
+	.col-9{width:75%;}
+	.col-10{width:83.33%;}
+	.col-11{width:91.66%;}
+	.col-12{width:100%;}
+	
+.row::after{
+	content:"";
+	clear:both;
+	display:table;
+}
+
+img{
+	max-width:100%;
+}
+/*HEAD*/
+
+#hero{
+	background-image:url("../Img/Fondo\ 2\ Propuesta.png");
+	background-size:cover;
+	text-align:center;
+	font-family:"Times New Roman", Times, serif;
+	color:black;
+	padding:80px 0;
+}
+
+
+/*BODY*/
+.cajas{
+    margin: 40px -30px 10px;
+    text-align: center;
+}
+
+.cajas>img{
+	width: 64%;
+}
+
+.btn_carrito{
+	background:#76792c;
+	padding: 5px 10px;
+	border: 3px solid #2f2c79;
+	border-radius: 2px;
+	font-weight: bold;
+	color: #fff;
+}
+.btn_carrito:hover{
+	background-color: #7f72c8;
+    color: #111 ;
+    transition: background 1s;
+}
+
+#Descripcion ul{
+	list-style:none;
+	margin:20px 110px;
+	padding:0;
+}
+#Descripcion ul li a{
+	font-weight:bold;
+	line-height:1em;
+	text-decoration:none;
+	color: #28276b;
+}
+.g{
+	list-style:inside;
+	
+}
+.p{
+	font-weight:bold;
+}
+.img{
+	margin:5px 10px;
+	border:3px solid #fff;
+	border-radius: 10px;
+	background-color: #fff;
+	width:3.5%;
+	
+}
+
+.tarjetas{
+	background-color:#7f72c8;
+	border: 3px solid #000000 ;
+	text-align:center;
+	color:#fff;
+	font-weight:bold;
+}

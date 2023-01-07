@@ -1,0 +1,145 @@
+*{
+	box-sizing:border-box;
+}
+.contenedor{
+	width:100%;
+	margin: 0;
+
+}
+
+[class*="col-"]{
+	width:100%;
+	float: left;
+}
+
+[class*="col-"]{
+	float:left;
+	padding:10px;
+}
+
+	.col-1{width:8.33%;}
+	.col-2{width:16.66%;}
+	.col-3{width:25%;}
+	.col-4{width:33.33%;}
+	.col-5{width:41.66%;}
+	.col-6{width:50%;}
+	.col-7{width:58.33%;}
+	.col-8{width:66.66%;}
+	.col-9{width:75%;}
+	.col-10{width:83.33%;}
+	.col-11{width:91.66%;}
+	.col-12{width:100%;}
+
+img{
+	max-width:100%;
+}
+	
+body{
+	font-family:"Century Gothic", Helvetica, Arial, sans-serif;
+}
+
+.row::after{
+	content:"";
+	clear:both;
+	display:table;
+}
+
+
+#hero{
+	background-image:url("../Img/Fondo_1.png");
+	background-size:cover;
+	text-align:center;
+	font-family:"Times New Roman", Times, serif;
+	color:#fff;
+	padding:2px 0;
+}
+
+/*BODY*/
+.caja1{
+	padding:20px;
+	text-align:center;
+}
+
+.cj{
+	padding:0px;
+	margin:0 10px;
+	padding:0;
+}
+.cj2{
+	padding: 0px;
+	margin:0 10px;
+	padding:0;
+}
+.cj3{
+	padding:5px;
+	margin:0 10px;
+	padding:0;
+}
+
+.caja{
+	border:3px solid #76792c;
+}
+
+.titulo{
+	font-size:2.5em;
+	font-family:"Times New Roman", Times, serif;
+	text-align:center;
+}
+
+.p1{
+	font-size:2em;
+	font-family:"Times New Roman", Times, serif;
+	text-align:center;
+}
+
+.interior{
+	max-width:1200px;
+	margin:0 auto;
+	
+}
+
+label{
+	font-weight:bold;
+	display:inline-block;
+	color:#76792c;
+	text-decoration:none;
+	border:3px solid #76792c;
+	padding:10px 20px;
+	text-align:center;
+	margin: 20px 0 0;
+	transition: background 2s;
+}
+label:hover{
+	background:#7f72c8;
+	color:#0d1237;
+}
+
+input[type=text]{
+	width:50%;
+	padding:5px;
+	border:1px solid #ccc;
+	border-radius:5px;
+}
+
+
+/*FOORTER*/
+footer{
+	background:#0d1237;
+	color:#fff;
+	font-size:0.8em;
+}
+#redes ul{
+	list-style:none;
+	margin:0 110px;
+	padding:0;
+	
+}
+#redes ul li{
+	display:inline-block;
+	margin:0 10px;
+}
+
+#redes ul li a{
+	font-weight:bold;
+	line-height:1.5em;
+}

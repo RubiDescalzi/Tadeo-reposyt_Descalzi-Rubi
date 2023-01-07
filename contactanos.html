@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./css/styleContactanos.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactanos</title>
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>  
+    <script src="./header_footer/include-html.js"></script>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+</head>
+<body>
+    <header>         
+        <div data-include="header_footer/menu.html"></div>
+        <nav style="height: 100px;"></nav>
+    </header>
+    
+    
+    <div class="fondo">
+        <p>CONTACTANOS</p>
+    </div>
+
+    <div class="contenedor">
+        <div class="iz">
+            <h2>Registro de Datos</h2>
+            <form action="#" method="post" name="formulario" id="formulario">
+                <div>
+                    <label>Sexo: </label>
+                    <input type="radio" name="rbSexo" value="F" checked /> Femenino
+                    <input type="radio" name="rbSexo" value="M" /> Masculino
+                </div>
+
+                <div>
+                    <label>Empresa: </label><input type="text" name="txtEmpresa" id="txtEmpresa" placeholder="Ingresa tu empresa..." autofocus required />
+                </div>
+                <div>
+                    <label>Nombres: </label><input type="text" name="txtNombres" id="txtNombres" placeholder="Ingresa tu Nombre..." required />
+                </div>
+                
+                <div >
+                    <label>Numero de celular </label>
+                    <nav class="numero_te">
+                        <select name="slPais">
+                            <option value="PE"selected>+51</option>
+                            <option value="CO" >123</option>
+                            <option value="EC">789</option>
+                        </select>
+                    <input type="number" name="intNumeroTelefono" id="NumeroT" placeholder="Ingrese su numero aqui" required/>
+                    </nav>
+
+                </div>
+
+                <div>
+                    <label>Correo Electronico </label><input type="text" name="Correo" id="correo" placeholder="escriba su correo" required/>
+                </div>
+
+                <div>
+                    <label>Escriba su duda o consulta</label>
+                    <textarea name="txtObservaciones" rows="7" cols="40"></textarea>
+                </div>
+                <div class="btn">
+                    <input type="submit" value="Guardar" name="btnGrabar" id="btnGrabar" onclick="validarEmail(form.correo.value)"/>
+                    <input type="reset" name="button2" id="button2" value="Borrar" />
+                </div>
+            </form>	
+
+        </div>
+ 
+        <div class="de">
+            <h2>informacion</h2>
+            <p> <a class="fa fa-map-marker"></a> Calle. Alfonso Ugarte 628 Of. 401, Chiclayo.</p>
+            <div class="dat">
+                <a class="fa fa-envelope-open"> carlossm@tadeocontable.pe / carlossampen92@gmail.com</a>
+                <a class="fa fa-phone"> 967 557 044 </a>  
+                <a class="fa fa-whatsapp"> 967 557 044 </a>     
+            </div>
+            <input type="button" value="MOSTRAR HORARIOS" id="btnMostrar"/>
+            <div id="horario">
+                <p>Lunes a Sabado: <br> 9:00 am - 18:00 pm</p>
+                <p>Domingo: Cerrado</p>
+            </div>
+
+             <div>
+                <h3>SIGUENOS EN</h3>
+                <div class="red-social">
+                    <p><a href="#"class="fa fa-youtube"></a> TADEO</p>
+                    
+                   <p> <a href="https://www.facebook.com/Carlossmcix" class="fa fa-facebook"></a> TADEO </p>  
+                   <p> <a href="https://instagram.com/carlossmcix92?igshid=YmMyMTA2M2Y=" class="fa fa-instagram"></a>TADEO </p>
+                </div>
+             </div>
+
+        </div>
+
+    </div>
+    <footer>
+        <div data-include="header_footer/footer.html"></div>
+    </footer>
+
+    <script>
+        function validarEmail(correo){
+            var expReg= /^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/;
+            var isvalido =expReg.test(correo);
+
+            if (isvalido ==true){
+                alert("peticion enviada correctamente");  
+            }else{
+                alert("Ingrese un correo valido");
+                document.getElementById("correo").focus();
+            }
+        }
+
+
+        function mostrarHorario(){
+            if (document.getElementById("horario").style.display=="block"){
+                document.getElementById("horario").style.display = "none";
+                document.getElementById("btnMostrar").value="MOSTRAR HORARIOS";
+            }else{
+                document.getElementById("horario").style.display = "block";
+                document.getElementById("btnMostrar").value="OCULTAR HORARIOS";
+            }
+        }
+          document.getElementById("btnMostrar").onclick = mostrarHorario;   
+    </script>
+
+</body>
+
+</html>
